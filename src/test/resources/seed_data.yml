@@ -1,0 +1,27 @@
+--- 
+courses: 
+  - 
+    duration: 80
+    status: COMPLETE
+    title: Java8
+    trainer: GLN
+  - 
+    duration: 20
+    status: REG_OPENED
+    title: SQL
+    trainer: ALN
+  - 
+    duration: 80
+    status: ONGOING
+    title: DevOps
+    trainer: ALN
+  - 
+    duration: 80
+    status: COMPLETE
+    title: Java8
+    trainer: KVR
+  - 
+    duration: 20
+    status: COMPLETE
+    title: SQL
+    trainer: GLN
