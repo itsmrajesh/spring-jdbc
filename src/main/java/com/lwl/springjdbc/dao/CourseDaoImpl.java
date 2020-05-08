@@ -21,19 +21,19 @@ public class CourseDaoImpl implements CourseDao {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
-	String addCourse = "INSERT INTO COURSE (TITLE,DURATION,STATUS) VALUES (?,?,?)";
+	private final String addCourse = "INSERT INTO COURSE (TITLE,DURATION,STATUS) VALUES (?,?,?)";
 
-	String getAllCourseList = "SELECT * FROM COURSE";
+	private final String getAllCourseList = "SELECT * FROM COURSE";
 
-	String updateCourse = "UPDATE COURSE SET TITLE = ? , DURATION = ? , STATUS = ? WHERE CID = ?";
+	private final String updateCourse = "UPDATE COURSE SET TITLE = ? , DURATION = ? , STATUS = ? WHERE CID = ?";
 
-	String deleteCourse = "DELETE FROM COURSE WHERE CID = ?";
+	private final String deleteCourse = "DELETE FROM COURSE WHERE CID = ?";
 
-	String searchCourse = "SELECT * FROM COURSE WHERE TITLE LIKE  ?";
+	private final String searchCourse = "SELECT * FROM COURSE WHERE TITLE LIKE  ?";
 
-	String searchCourseById = "SELECT * FROM COURSE WHERE CID = ?";
+	private final String searchCourseById = "SELECT * FROM COURSE WHERE CID = ?";
 
-	String getCourseByStatus = "SELECT COUNT(CID) as COUNT , STATUS FROM COURSE GROUP BY STATUS;";
+	private final String getCourseByStatus = "SELECT COUNT(CID) as COUNT , STATUS FROM COURSE GROUP BY STATUS;";
 
 	@Override
 	public int addCourse(Course course) {
